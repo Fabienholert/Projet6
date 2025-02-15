@@ -2,10 +2,10 @@ const express = require('express');
 const mongoose = require ('mongoose');
 const app = express();
 
+const Thing = require('./models/Things');
 
-mongoose.connect('mongodb+srv://fabienholert:Leonie2014!@cluster0.rmcmj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
-  { useNewUrlParser: true,
-    useUnifiedTopology: true })
+
+mongoose.connect('mongodb+srv://fabienholert:Leonie2014!@cluster0.rmcmj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',)
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
